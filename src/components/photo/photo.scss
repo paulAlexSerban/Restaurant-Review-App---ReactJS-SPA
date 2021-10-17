@@ -1,0 +1,16 @@
+$component: 'photo';
+@import '../../abstracts/_variables.scss';
+
+.#{$component} {
+  &__base {
+    height: 140px;
+    width: 100%;
+    padding-right: $gutter;
+    object-fit: cover;
+
+    .modal-body & {
+      height: 100%;
+      padding-right: 0;
+    }
+  }
+}

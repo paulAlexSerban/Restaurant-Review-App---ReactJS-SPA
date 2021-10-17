@@ -1,0 +1,39 @@
+@import '../../abstracts/_variables.scss';
+
+.aside {
+  &__base {
+    padding: $baseline ($gutter / 2);
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    overflow: scroll;
+  }
+
+  &__toggle-button {
+    align-self: flex-end;
+    font-size: 2rem;
+  }
+
+  &__content {
+    width: 300px;
+    margin: $baseline 0;
+  }
+
+  &__item {
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  &__restaurant {
+    &-list{
+      font-size: 1.8rem;
+      padding-left: $baseline;
+    }
+
+    &-item {
+      cursor: pointer;
+    }
+  }
+}

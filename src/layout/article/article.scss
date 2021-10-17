@@ -1,0 +1,16 @@
+@import '../../abstracts/variables.scss';
+
+$structureCmpName: 'article';
+
+.#{$structureCmpName} {
+  &__base {
+    @media (min-width: $desktop) {
+      width: 100%;
+      height: 100%;
+    }
+
+    > div {
+      height: 100%;
+    }
+  }
+}

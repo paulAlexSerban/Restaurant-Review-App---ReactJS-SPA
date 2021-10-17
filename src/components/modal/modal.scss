@@ -1,0 +1,28 @@
+$component: 'modal';
+
+.#{$component} {
+  &__container {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__inputs-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__label {
+    margin-right: $gutter / 4;
+  }
+
+  &__input {
+    width: 80px;
+    margin-bottom: $baseline;
+    margin-right: $gutter / 2;
+  }
+
+  &__button {
+    font-size: 18px;
+  }
+}

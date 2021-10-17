@@ -1,0 +1,9 @@
+@import './_colors.scss';
+@import './_breakpoints';
+
+
+$baseline: 0.6rem;
+$gutter: 3rem;
+
+$margin-baseline: $baseline * 2.4rem;
+$padding-gutter: $gutter / 2;

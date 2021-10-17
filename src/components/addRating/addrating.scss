@@ -1,0 +1,43 @@
+@import '../../abstracts/_variables.scss';
+
+$component: 'addrating';
+
+.#{$component} {
+  &__title {
+    font-size: 24px;
+  }
+
+  &__form {
+    border-radius: 10px;
+    justify-content: center;
+    align-items: baseline;
+    display: flex;
+    flex-direction: column;
+    padding: $baseline $gutter;
+    background-color: $c-white;
+  }
+
+  &__label {
+    margin-bottom: $baseline;
+    font-size: 20px;
+  }
+
+  &__username,
+  &__stars,
+  &__comment {
+    min-height: 30px;
+    width: 100%;
+    margin-bottom: $baseline * 2;
+    font-size: 20px;
+  }
+
+  &__comment {
+    height: 100px;
+  }
+
+  &__button {
+    font-size: 20px;
+    min-height: 30px;
+    margin: $baseline ($gutter / 2);
+  }
+}

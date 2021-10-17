@@ -1,0 +1,12 @@
+@import '../../abstracts/variables.scss';
+
+$structureCmpName: 'main';
+
+.#{$structureCmpName} {
+  &__base {
+    width: 100%;
+    height: 78vh;
+    display: flex;
+    flex-direction: row;
+  }
+}

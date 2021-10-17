@@ -1,0 +1,15 @@
+@import '../../abstracts/_variables.scss';
+ $component: "photo-strip";
+
+ .#{$component} {
+  &__base {
+    width: 750px;
+    height: 20-px;
+    position: relative;
+    background-color: lightgrey;
+    padding: $gutter / 2;
+    position: absolute;
+    bottom: 20px;
+    left: 300px;
+  }
+ }

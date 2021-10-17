@@ -1,0 +1,11 @@
+@import '../../abstracts/_variables.scss';
+
+$component: 'street-view';
+
+.#{$component} {
+  height: 250px;
+  width: 250px;
+  position: absolute;
+  bottom: 105px;
+  left: $gutter / 4;
+}

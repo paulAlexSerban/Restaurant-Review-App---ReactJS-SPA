@@ -1,0 +1,21 @@
+@import '../../abstracts/_variables.scss';
+
+$component: 'rating-card';
+
+.#{$component} {
+  &__base {
+    margin-bottom: $baseline;
+  }
+
+  &__header {
+    display: flex;
+  }
+
+  &__rating {
+    padding: 0 $gutter;
+  }
+
+  &__text {
+    padding: $baseline $gutter;
+  }
+}

@@ -1,0 +1,47 @@
+@import '../../abstracts/_variables.scss';
+@import '../modal/modal.scss';
+
+$component: 'map-container';
+
+.#{$component} {
+  &__base {
+    height: 100%;
+    width: 100%;
+  }
+
+  &__button {
+    position: absolute;
+    z-index: 10;
+    padding: $baseline ($gutter / 2);
+    font-size: 3rem;
+  }
+
+  &__get-nearby-rest {
+    z-index: 10;
+    position: absolute;
+    top: $baseline;
+    left: 50%;
+    font-size: 24px;
+    transform: translate(50, 0);
+  }
+
+  &__filterRestaurants {
+    right: $gutter * 3;
+    top: $baseline;
+    font-size: 16px;
+    height: 40px;
+  }
+
+  &__userLocation {
+    left: $gutter / 4;
+    bottom: $baseline * 4;
+
+    .spinner-border {
+      width: 3rem;
+      height: 3rem;
+      vertical-align: baseline;
+    }
+  }
+
+
+}

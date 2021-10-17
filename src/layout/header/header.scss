@@ -1,0 +1,28 @@
+@import '../../abstracts/variables.scss';
+
+$structureCmpName: 'header';
+
+.#{$structureCmpName}  {
+  &__base {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 10vh;
+    background-color: $c-darkgrey;
+  }
+
+  &__title,
+  &__description {
+    color: $c-white;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 3rem;
+  }
+
+  &__description {
+    font-size: 2rem;
+  }
+}

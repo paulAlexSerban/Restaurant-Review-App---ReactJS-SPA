@@ -1,0 +1,39 @@
+@import '../../abstracts/_variables.scss';
+
+$component: 'info-window';
+
+.#{$component} {
+  &__body {
+    overflow: scroll;
+  }
+
+  &__content {
+    max-height: 300px;
+    margin: $baseline ($gutter / 4)
+  }
+
+  &__address {
+    margin-bottom: $baseline * 2;
+  }
+
+  &__subtitle {
+    margin-bottom: $baseline / 2;
+    font-size: 1.8rem;
+  }
+
+  &__text {
+    &.card-text  {
+      margin-bottom: $baseline;
+    }
+  }
+
+  &__ratings {
+    height: 200px;
+    overflow: scroll;
+  }
+
+  &__add-rating {
+    padding: $baseline $gutter;
+    outline: none;
+  }
+}
